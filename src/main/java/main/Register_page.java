@@ -19,7 +19,19 @@ public class Register_page {
 		//only then open Home and return true
 		//else return false
 		 //write code to open Home window(object)
+		if((name == "") && (username == "")&& (password == "") && (email== ""))
+		{
+			
+			if(conatctnumber == "")
+			{
+				return true;
+			}
+			return true;
+		}
 		return false;
+	}
+	public void calltoOpenHome() {
+		Home obj = new Home();
 	}
 	public JFrame f;
     public Register_page()
